@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('product-container');
 
-  fetch('https://fakestoreapi.com/products') // Cambia por tu API real si quieres
+  fetch('http://localhost:8082/') // Cambia por tu API real si quieres
     .then(response => {
       if (!response.ok) throw new Error('Error al cargar productos');
       return response.json();
